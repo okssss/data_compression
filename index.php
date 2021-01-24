@@ -19,3 +19,5 @@ id euismod urna sodales. ";
 $compressed = gzcompress($string);
 echo "Original size: ". strlen($string)."\n";
 echo "Compressed size: ". strlen($compressed)."\n";
+// распоковка
+$original = gzuncompress($compressed);
