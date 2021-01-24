@@ -15,3 +15,7 @@ sed nunc. Etiam at justo in leo congue mollis.
 Nullam in neque eget metus hendrerit scelerisque
 eu non enim. Ut malesuada lacus eu nulla bibendum
 id euismod urna sodales. ";
+// упаковываем
+$compressed = gzcompress($string);
+echo "Original size: ". strlen($string)."\n";
+echo "Compressed size: ". strlen($compressed)."\n";
